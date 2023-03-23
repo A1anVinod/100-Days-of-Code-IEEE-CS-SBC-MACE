@@ -1,0 +1,23 @@
+import string
+
+a = list(input("Enter the string : "))
+b=str()
+for i in a:
+    n=string.ascii_letters.count(i)
+    if(n>0):    
+        b=b+i   
+c=b.lower()
+
+d=list(string.ascii_lowercase)
+s=1
+dict={}
+for j in d:
+    dict[j]=s
+    s+=1
+
+k=str()
+for i in c:
+    k=k+str(dict[i])
+    k=k+str(' ')
+    
+print(k)
