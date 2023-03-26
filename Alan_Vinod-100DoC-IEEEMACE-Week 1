@@ -1,0 +1,14 @@
+def soa(a=[]):
+    sum=0
+    for i in range(len(a)):
+        sum = sum + (a[i])
+    return(sum)
+
+a=[]
+n=int(input("Enter no: of elements in array: "))
+print("Enter the elements: ")
+for i in range(n):
+    s=int(input())
+    a.append(s)
+
+print("The array is",a,"and the sum is",soa(a))
