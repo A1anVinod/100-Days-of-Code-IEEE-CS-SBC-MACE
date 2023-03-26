@@ -1,0 +1,9 @@
+a=[1,2,3]
+n=int(input("Enter no: of elements to add : "))
+i=0
+print("Enter the elements : ")
+for i in range(n):
+    m=int(input())
+    a.append(m)
+
+print(a)
